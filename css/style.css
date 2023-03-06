@@ -293,6 +293,41 @@ h5 {
   text-transform: uppercase;
 }
 
+.btn {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(3px);
+}
+.btn .arrow svg {
+  transform: translateY(3px);
+}
+.btn--primary {
+  background-color: white;
+  color: #67257b;
+  border-radius: 48px;
+  padding: 1rem 2rem;
+  width: 26rem;
+}
+.btn--primary .arrow {
+  margin-left: 6rem;
+}
+.btn--secondary {
+  background-color: transparent;
+  border: none;
+  padding: 1rem 2rem;
+  width: 26rem;
+}
+.btn--secondary .arrow {
+  margin-right: 1rem;
+}
+
 .container {
   padding: 80px;
 }

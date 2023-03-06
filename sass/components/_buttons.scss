@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+.btn {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(3px);
+  }
+  .arrow svg {
+    transform: translateY(3px);
+  }
+  &--primary {
+    background-color: $color-white;
+    color: $color-purple;
+    border-radius: 48px;
+    padding: 1rem 2rem;
+    width: 26rem;
+    .arrow {
+      margin-left: 6rem;
+    }
+  }
+  &--secondary {
+    background-color: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    width: 26rem;
+    .arrow {
+      margin-right: 1rem;
+    }
+  }
+}
