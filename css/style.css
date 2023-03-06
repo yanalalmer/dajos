@@ -376,6 +376,56 @@ h5 {
   margin-right: 20rem;
 }
 
+.hero {
+  background-color: #00ae74;
+  display: flex;
+  position: relative;
+}
+.hero__left-section {
+  float: left;
+  width: 60%;
+  padding: 110px 80px 80px 80px;
+}
+.hero__title {
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.hero__subtitle {
+  color: #67257b;
+}
+.hero__right-section {
+  float: right;
+  width: 40%;
+}
+.hero__right-section img {
+  width: 100%;
+}
+.hero__para {
+  color: white;
+  font-weight: 300;
+  line-height: 50px;
+}
+.hero-list {
+  color: white;
+}
+.hero-list__wrapper {
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.hero-list__title {
+  color: #67257b;
+}
+.hero-list__item {
+  margin: 1rem 0;
+}
+.hero-list__item::before {
+  content: url(../assets/icons/arrow.svg);
+  margin-right: 20px;
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
 .container {
   padding: 80px;
 }

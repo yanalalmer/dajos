@@ -1,0 +1,50 @@
+@use '../abstracts/' as *;
+.hero {
+  background-color: $color-green;
+  display: flex;
+  position: relative;
+  &__left-section {
+    float: left;
+    width: 60%;
+    padding: 110px 80px 80px 80px;
+  }
+  &__title {
+    color: $color-white;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    color: $color-purple;
+  }
+  &__right-section {
+    float: right;
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  &__para {
+    color: $color-white;
+    font-weight: 300;
+    line-height: 50px;
+  }
+  &-list {
+    color: $color-white;
+    &__wrapper {
+      padding-left: 100px;
+      padding-top: 50px;
+    }
+    &__title {
+      color: $color-purple;
+    }
+    &__item {
+      margin: 1rem 0;
+      &::before {
+        content: url(../assets/icons/arrow.svg);
+        margin-right: 20px;
+        display: inline-block;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
