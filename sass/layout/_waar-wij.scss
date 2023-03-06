@@ -1,0 +1,56 @@
+@use '../abstracts' as *;
+.waar {
+  background-color: $color-purple;
+  color: $color-white;
+}
+.waar__grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  padding: 100px;
+}
+.waar__grid-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  &__title {
+    margin-bottom: 3rem;
+    span {
+      display: block;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+  &__img {
+    @include flexbox(unset, center);
+    margin-bottom: 2rem;
+  }
+  &__para {
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    &::after {
+      content: '';
+      width: 100%;
+      background: $color-white;
+      height: 1px;
+      display: block;
+      margin: 4rem 0;
+    }
+  }
+  &__list {
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    &__item {
+      font-weight: 300;
+      font-style: italic;
+      line-height: 24px;
+      &::before {
+        content: url(../assets/icons/arrow-pink.svg);
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+  }
+}
