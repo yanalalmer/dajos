@@ -1,0 +1,59 @@
+@use '../abstracts/' as *;
+
+.header__burger__wrapper {
+  background-color: $color-purple;
+  color: $color-white;
+  height: 100%;
+  width: 179px;
+  @include flexbox(space-around, center);
+}
+.header__burger {
+  position: relative;
+  @include flexbox(center, center);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &__menu {
+    width: 24px;
+    height: 6px;
+    background: $color-white;
+    transition: all 0.5s ease-in-out;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+
+      height: 6px;
+      background: white;
+      transition: all 0.5s ease-in-out;
+    }
+    &::before {
+      transform: translateY(-8px) translateX(1px);
+      width: 26px;
+    }
+    &::after {
+      transform: translateY(8px);
+      width: 22px;
+    }
+  }
+  &.open {
+    .header__burger__menu {
+      transform: translateX(-50px);
+      background: transparent;
+      &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    }
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}

@@ -234,6 +234,65 @@ h5 {
   cursor: pointer;
 }
 
+.header__burger__wrapper {
+  background-color: #67257b;
+  color: white;
+  height: 100%;
+  width: 179px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__burger {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.header__burger__menu {
+  width: 24px;
+  height: 6px;
+  background: white;
+  transition: all 0.5s ease-in-out;
+}
+.header__burger__menu::before, .header__burger__menu::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  background: white;
+  transition: all 0.5s ease-in-out;
+}
+.header__burger__menu::before {
+  transform: translateY(-8px) translateX(1px);
+  width: 26px;
+}
+.header__burger__menu::after {
+  transform: translateY(8px);
+  width: 22px;
+}
+.header__burger.open .header__burger__menu {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.header__burger.open .header__burger__menu::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.header__burger.open .header__burger__menu::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+.header__burger__title {
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 .container {
   padding: 80px;
 }
