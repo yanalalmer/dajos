@@ -519,6 +519,53 @@ h5 {
   padding-bottom: 6rem;
 }
 
+.maak-het {
+  padding: 0 80px;
+  background-color: #cfb572;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+}
+.maak-het__left-section {
+  flex: 50%;
+  position: relative;
+}
+.maak-het__right-section {
+  flex: 50%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.maak-het__title {
+  color: #ca148b;
+  margin-bottom: 8rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(349px);
+  padding: 80px 0;
+}
+.maak-het__title span {
+  font-style: italic;
+  font-weight: 400;
+  line-height: 60px;
+}
+.maak-het__para {
+  margin: 4rem 0;
+  font-weight: 300;
+  line-height: 30px;
+  padding-bottom: 6rem;
+}
+.maak-het__list__item {
+  font-weight: 500;
+  font-style: italic;
+  line-height: 24px;
+}
+.maak-het__list__item::before {
+  content: url(../assets/icons/arrow-pink.svg);
+  margin-right: 20px;
+  display: inline-block;
+}
+
 .container {
   padding: 80px;
 }

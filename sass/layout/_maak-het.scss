@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+.maak-het {
+  padding: 0 80px;
+  background-color: $color-beige;
+  @include flexbox(unset, center);
+  &__left-section {
+    flex: 50%;
+    position: relative;
+  }
+  &__right-section {
+    flex: 50%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  &__title {
+    color: $color-pink;
+    margin-bottom: 8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(349px);
+    padding: 80px 0;
+    span {
+      font-style: italic;
+      font-weight: 400;
+      line-height: 60px;
+    }
+  }
+  &__para {
+    margin: 4rem 0;
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 6rem;
+  }
+  &__list {
+    &__item {
+      font-weight: 500;
+      font-style: italic;
+      line-height: 24px;
+      &::before {
+        content: url(../assets/icons/arrow-pink.svg);
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+  }
+}
