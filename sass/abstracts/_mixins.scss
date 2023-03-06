@@ -1,0 +1,12 @@
+@use 'breakpoints' as *;
+@mixin flexbox($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin media-query($key) {
+  $size: map-get($breakpoints, $key);
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
