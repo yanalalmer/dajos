@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+.een-plek {
+  background-color: $color-blue;
+  @include flexbox(unset, center);
+  &__left-section {
+    flex: 50%;
+    @include flexbox(flex-end, unset);
+    position: relative;
+  }
+  &__right-section {
+    flex: 50%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  &__title {
+    color: $color-purple;
+
+    position: absolute;
+    right: 0;
+    top: 50px;
+    transform: translateX(349px);
+  }
+  &__para {
+    color: $color-white;
+    margin: 4rem 0;
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 6rem;
+  }
+}

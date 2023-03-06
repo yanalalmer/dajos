@@ -486,6 +486,39 @@ h5 {
   display: inline-block;
 }
 
+.een-plek {
+  background-color: #00a9c7;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+}
+.een-plek__left-section {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: unset;
+  position: relative;
+}
+.een-plek__right-section {
+  flex: 50%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.een-plek__title {
+  color: #67257b;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  transform: translateX(349px);
+}
+.een-plek__para {
+  color: white;
+  margin: 4rem 0;
+  font-weight: 300;
+  line-height: 30px;
+  padding-bottom: 6rem;
+}
+
 .container {
   padding: 80px;
 }
