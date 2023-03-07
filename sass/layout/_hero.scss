@@ -3,10 +3,18 @@
   background-color: $color-green;
   display: flex;
   position: relative;
+
   &__left-section {
     float: left;
     width: 60%;
     padding: 110px 80px 80px 80px;
+    @include for-desktop {
+      width: 50%;
+      padding: 50px;
+    }
+    @include for-tablet {
+      padding: 20px;
+    }
   }
   &__title {
     color: $color-white;
@@ -22,17 +30,26 @@
     img {
       width: 100%;
     }
+    @include for-desktop {
+      width: 50%;
+    }
   }
   &__para {
     color: $color-white;
     font-weight: 300;
     line-height: 50px;
+    @include for-laptop {
+      line-height: 30px;
+    }
   }
   &-list {
     color: $color-white;
     &__wrapper {
       padding-left: 100px;
       padding-top: 50px;
+      @include for-laptop {
+        padding-left: 0;
+      }
     }
     &__title {
       color: $color-purple;
