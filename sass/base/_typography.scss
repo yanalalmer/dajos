@@ -7,24 +7,54 @@ h1 {
   font-size: 60px;
   font-weight: 700;
   line-height: 60px;
+  @include for-desktop {
+    font-size: 55px;
+  }
+  @include for-tablet {
+    font-size: 50px;
+  }
 }
 h2 {
   font-size: 50px;
   font-weight: 700;
   line-height: 60px;
+  @include for-desktop {
+    font-size: 45px;
+  }
+  @include for-tablet {
+    font-size: 40px;
+  }
 }
 h3 {
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
+  @include for-desktop {
+    font-size: 25px;
+  }
+  @include for-tablet {
+    font-size: 22px;
+  }
 }
 h4 {
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+  @include for-desktop {
+    font-size: 20px;
+  }
+  @include for-tablet {
+    font-size: 18px;
+  }
 }
 h5 {
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
+  @include for-desktop {
+    font-size: 18px;
+  }
+  @include for-tablet {
+    font-size: 16px;
+  }
 }
