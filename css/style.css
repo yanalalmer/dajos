@@ -448,6 +448,11 @@ h5 {
     padding: 20px;
   }
 }
+@media (max-width: 37.5em) {
+  .hero__left-section {
+    padding: 0;
+  }
+}
 .hero__title {
   color: white;
   font-weight: 400;
@@ -462,6 +467,11 @@ h5 {
 }
 .hero__right-section img {
   width: 100%;
+}
+@media (max-width: 64em) {
+  .hero__right-section img {
+    height: 100%;
+  }
 }
 @media (max-width: 75em) {
   .hero__right-section {

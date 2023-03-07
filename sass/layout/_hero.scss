@@ -15,6 +15,9 @@
     @include for-tablet {
       padding: 20px;
     }
+    @include for-phone-only {
+      padding: 0;
+    }
   }
   &__title {
     color: $color-white;
@@ -29,6 +32,9 @@
     width: 40%;
     img {
       width: 100%;
+      @include for-laptop {
+        height: 100%;
+      }
     }
     @include for-desktop {
       width: 50%;
