@@ -1,14 +1,12 @@
-$breakpoints: (
-  // 400px = 25em
-  xxsm: 25em,
-  // 500px = 31.25em
-  xsm: 31.25em,
-  // 600px = 37.5em
-  sm: 37.5em,
-  // 768px = 48em
-  md: 48em,
-  // 1024px = 64em
-  lg: 64em,
-  // 1200px = 75em
-  xl: 75em
-);
+// 400px = 25em
+$xxsm: 25em;
+// 500px = 31.25em
+$xsm: 31.25em;
+// 600px = 37.5em
+$sm: 37.5em;
+// 768px = 48em
+$md: 48em;
+// 1024px = 64em
+$lg: 64em;
+// 1200px = 75em
+$xl: 75em;

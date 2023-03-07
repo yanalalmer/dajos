@@ -1,12 +1,26 @@
-@use 'breakpoints' as *;
+@use './breakpoints' as *;
 @mixin flexbox($justify, $align) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
 }
-@mixin media-query($key) {
-  $size: map-get($breakpoints, $key);
-  @media only screen and (max-width: $size) {
+@mixin for-phone-only {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+@mixin for-laptop {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (max-width: $xl) {
     @content;
   }
 }
