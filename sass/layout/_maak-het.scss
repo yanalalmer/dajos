@@ -3,6 +3,9 @@
   padding: 0 80px;
   background-color: $color-beige;
   @include flexbox(unset, center);
+  @include for-tablet {
+    flex-direction: column;
+  }
   &__left-section {
     flex: 50%;
     position: relative;
@@ -24,6 +27,11 @@
       font-style: italic;
       font-weight: 400;
       line-height: 60px;
+    }
+    @include for-tablet {
+      position: initial;
+      text-align: center;
+      transform: none;
     }
   }
   &__para {

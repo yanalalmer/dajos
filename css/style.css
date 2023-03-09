@@ -525,10 +525,33 @@ h5 {
   grid-gap: 40px;
   padding: 100px;
 }
+@media (max-width: 64em) {
+  .waar__grid-wrapper {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 64em) {
+  .waar__title {
+    text-align: center;
+  }
+}
 
 .waar__grid-card {
   display: grid;
   grid-template-rows: auto 1fr;
+}
+@media (max-width: 64em) {
+  .waar__grid-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .waar__grid-card__title {
   margin-bottom: 3rem;
@@ -579,6 +602,11 @@ h5 {
   justify-content: unset;
   align-items: center;
 }
+@media (max-width: 75em) {
+  .een-plek {
+    flex-direction: column;
+  }
+}
 .een-plek__left-section {
   flex: 50%;
   display: flex;
@@ -598,6 +626,13 @@ h5 {
   top: 50px;
   transform: translateX(349px);
 }
+@media (max-width: 75em) {
+  .een-plek__title {
+    left: 0;
+    top: 0;
+    transform: translateY(-70px);
+  }
+}
 .een-plek__para {
   color: white;
   margin: 4rem 0;
@@ -612,6 +647,11 @@ h5 {
   display: flex;
   justify-content: unset;
   align-items: center;
+}
+@media (max-width: 48em) {
+  .maak-het {
+    flex-direction: column;
+  }
 }
 .maak-het__left-section {
   flex: 50%;
@@ -636,6 +676,13 @@ h5 {
   font-weight: 400;
   line-height: 60px;
 }
+@media (max-width: 48em) {
+  .maak-het__title {
+    position: initial;
+    text-align: center;
+    transform: none;
+  }
+}
 .maak-het__para {
   margin: 4rem 0;
   font-weight: 300;
@@ -655,6 +702,11 @@ h5 {
 
 .container {
   padding: 80px;
+}
+@media (max-width: 48em) {
+  .container {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
